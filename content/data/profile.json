@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "portrait": "/pfp/chetan-portrait.jpg",
+    "name": "Chetan Mulge",
+    "initials": "CM",
+    "role": {
+      "prefix": "Software engineer,",
+      "emphasis": "AI/ML & creative technology"
+    },
+    "location": "Kalaburagi, Karnataka, India",
+    "availability": "Open to software engineering and AI/ML opportunities",
+    "email": "mulge10chetan@gmail.com",
+    "intro": "I’m a software developer and MCA graduate interested in building useful products across web development, computer vision, and AI. I enjoy moving between code, experiments, and creative digital experiences.",
+    "notes": [
+      "I completed my MCA at the Central University of Karnataka in 2026, after earning my BCA from Sharnbasva University.",
+      "My technical interests include Python, C, SQL, web development, machine learning, OpenCV, and YOLO-based computer vision.",
+      "Outside software development, I enjoy video editing and exploring cinematic, interactive web experiences."
+    ],
+    "deskWelcome": "Welcome to my little corner of the internet. Explore the projects, open a few windows, and leave a note.",
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/Chetan-mulge"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/chetan-mulge-87a4562a4/"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:mulge10chetan@gmail.com"
+      }
+    ]
+  },
+  "headlineStats": []
+}

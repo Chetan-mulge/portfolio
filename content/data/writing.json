@@ -1,0 +1,43 @@
+
+[
+  {
+    "slug": "research-paper",
+    "title": "Bilingual Text Detection and Recognition from Video Frames",
+    "href": "/CM1_paper.pdf",
+    "blurb": "Research on multilingual text detection and recognition from video frames.",
+    "year": 2026,
+    "readingTime": "Research Paper"
+  },
+  {
+    "slug": "ai-engineer-oneroadmap",
+    "title": "AI Engineer",
+    "href": "https://oneroadmap.io/",
+    "blurb": "OneRoadmap · Certificate of Achievement",
+    "year": 2026,
+    "readingTime": "Certification"
+  },
+  {
+    "slug": "agents-and-workflows-openai",
+    "title": "Agents and Workflows",
+    "href": "https://academy.openai.com/",
+    "blurb": "OpenAI Academy · Course Completion Certificate",
+    "year": 2026,
+    "readingTime": "Certification"
+  },
+  {
+    "slug": "applied-ai-foundations-openai",
+    "title": "Applied AI Foundations",
+    "href": "https://academy.openai.com/",
+    "blurb": "OpenAI Academy · Course Completion Certificate",
+    "year": 2026,
+    "readingTime": "Certification"
+  },
+  {
+    "slug": "data-analyst-oneroadmap",
+    "title": "Data Analyst",
+    "href": "https://oneroadmap.io/",
+    "blurb": "OneRoadmap · Certificate of Achievement",
+    "year": 2025,
+    "readingTime": "Certification"
+  }
+]

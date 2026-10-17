@@ -1,0 +1,24 @@
+
+{
+  "updated": "2026-10",
+  "lede": "A snapshot of what I’m focused on right now.",
+  "items": [
+    {
+      "label": "Upskilling",
+      "what": "Continuously strengthening my software engineering skills, learning industry-standard tools, and improving my development practices."
+    },
+    {
+      "label": "Building",
+      "what": "Developing practical software projects and refining my portfolio with clean code, maintainable architecture, and professional documentation."
+    },
+    {
+      "label": "Exploring",
+      "what": "Modern web technologies, AI-powered applications, system design, and scalable software engineering solutions."
+    },
+    {
+      "label": "Creating",
+      "what": "Building interactive web experiences and crafting cinematic video edits that combine technical precision with creative storytelling."
+    }
+  ],
+  "foot": "This is a living snapshot of my progress, current projects, and continuous growth as a developer."
+}

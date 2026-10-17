@@ -1,0 +1,111 @@
+  {
+    "openTo": "Open to opportunities",
+    "headline": {
+      "lead": "I build software at the intersection of",
+      "emphasis": "AI, computer vision & the web",
+      "tail": "with a creative eye."
+    },
+    "seeWork": "Explore my work",
+    "toDesk": "There’s an interactive side, too",
+    "toDeskBadge": "take a look",
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "work": "Work",
+      "contact": "Contact",
+      "desk": "The desk",
+      "sectionsLabel": "Sections",
+      "topLabel": "Top of page",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "backToTop": "Back to top"
+    },
+    "resume": {
+      "short": "Résumé",
+      "long": " PDF ↓"
+    },
+    "theme": {
+      "toDark": "Switch to dark",
+      "toLight": "Switch to light"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "Hey, I’m Chetan.",
+      "portraitPending": "Portrait coming soon",
+      "portraitAlt": "Chetan Mulge"
+    },
+    "portraitEgg": {
+      "taps": 10,
+      "question": "What do I like building?",
+      "inputLabel": "Your answer",
+      "submit": "Answer",
+      "wrong": "Not quite. Try again.",
+      "dismiss": "Maybe later",
+      "answers": [
+        "software",
+        "things",
+        "projects",
+        "code"
+      ],
+      "caption": "still building",
+      "hiddenAlt": "Chetan, off duty",
+      "flipBack": "Flip back"
+    },
+    "skills": {
+      "eyebrow": "Toolbox",
+      "title": "Tools I work with"
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "title": "My journey so far",
+      "indexLabel": "Roles",
+      "expand": "Show details",
+      "collapse": "Hide details"
+    },
+    "work": {
+      "eyebrow": "Selected work",
+      "title": "Projects I’ve been building",
+      "lede": "A mix of computer vision research, web applications, and experiments. Project details and links will grow as each build is published.",
+      "readMore": "Explore project",
+      "shotPending": "Project images coming soon"
+    },
+    "credentials": {
+      "eyebrow": "The rest of it",
+      "title": "Education & interests",
+      "education": "Education",
+      "awards": "Highlights",
+      "writing": "Certificates"
+    },
+    "closer": {
+      "eyebrow": "Contact",
+      "title": "Have something\ninteresting in mind?",
+      "body": "I’m interested in thoughtful products, engineering challenges, and creative collaborations. Reach out using the contact links below.",
+      "plainVersion": "Plain text version"
+    },
+    "door": {
+      "title": "The portfolio is only the beginning.",
+      "body": "Open the canvas for a more playful view of my projects, notes, tools, and experiments.",
+      "scores": "Try the mini-games if you feel competitive.",
+      "hidden": "A few details are hidden around the canvas. Explore and see what you find.",
+      "action": "Open the canvas",
+      "note": "Best experienced on a desktop; mobile has a simplified view."
+    },
+    "footer": {
+      "note": "Thanks for spending a little time here."
+    },
+    "desk": {
+      "exit": "Back to portfolio",
+      "tabSuffix": "the canvas"
+    },
+    "workPage": {
+      "allWork": "All projects",
+      "home": "Home",
+      "indexTitle": "Projects",
+      "indexLede": "A closer look at the things I’ve built and explored.",
+      "whatItDoes": "What it does",
+      "builtWith": "Built with",
+      "shots": "Screenshots",
+      "backToWork": "Back to all projects"
+    }
+  }

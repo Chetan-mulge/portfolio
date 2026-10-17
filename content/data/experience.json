@@ -1,0 +1,53 @@
+
+{
+  "jobs": [
+    {
+      "slug": "istudio-web-development",
+      "company": "iStudio",
+      "role": "Website Design and Development Intern",
+      "period": "May 2025 – July 2025",
+      "year": 2025,
+      "lede": "An internship focused on website design and development, with training in practical web technologies.",
+      "highlights": [
+        "Participated in website design and development training.",
+        "Worked toward developing practical web development skills."
+      ],
+      "stack": []
+    },
+    {
+      "slug": "istudio-ethical-hacking",
+      "company": "iStudio",
+      "role": "Ethical Hacking Intern",
+      "period": "May 2025 – August 2025",
+      "year": 2025,
+      "lede": "An internship focused on learning ethical hacking and cybersecurity fundamentals.",
+      "highlights": [
+        "Participated in ethical hacking training.",
+        "Developed foundational knowledge of cybersecurity concepts."
+      ],
+      "stack": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Central University of Karnataka",
+      "degree": "Master of Computer Applications (MCA)",
+      "detail": "Completed May 2026"
+    },
+    {
+      "institution": "Sharnbasva University",
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "detail": "Undergraduate degree"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Bilingual Text Detection and Recognition from Video Frames",
+      "event": "Research Paper · ISRSD2026 · Intelligent Systems & AI"
+    },
+    {
+      "title": "Video Editing & Cinematic Storytelling",
+      "event": "Watch Showreel ↗ · video-editor-portfolio-mu.vercel.app"
+    }
+  ]
+}

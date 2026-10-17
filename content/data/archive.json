@@ -1,0 +1,25 @@
+[
+  {
+    "id": "this-site",
+    "kind": "built",
+    "title": "This portfolio",
+    "note": "A personal portfolio inspired by interactive desktop canvases, with project case studies and a playful exploration mode.",
+    "when": "Oct 2026",
+    "meta": "Next.js · React · TypeScript · GSAP"
+  },
+  {
+    "id": "kannada-text-detection",
+    "kind": "tinkering",
+    "title": "Kannada text detection",
+    "note": "Experimenting with video-frame extraction, annotations, and custom text-region detection for Kannada news footage.",
+    "when": "2026",
+    "meta": "Python · OpenCV · YOLOv8"
+  },
+  {
+    "id": "video-editing",
+    "kind": "random",
+    "title": "Video editing experiments",
+    "note": "Exploring cinematic pacing, color, motion graphics, and short-form storytelling.",
+    "when": "Ongoing"
+  }
+]

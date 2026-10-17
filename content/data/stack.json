@@ -1,0 +1,108 @@
+[
+  {
+    "label": "Programming Languages",
+    "tools": [
+      {
+        "name": "Python",
+        "logo": "/logos/python-original.svg"
+      },
+      {
+        "name": "C",
+        "logo": "/logos/c-original.svg"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "/logos/javascript-original.svg"
+      },
+      {
+        "name": "SQL"
+      }
+    ]
+  },
+  {
+    "label": "Web Development",
+    "tools": [
+      {
+        "name": "HTML",
+        "logo": "/logos/html5-original.svg"
+      },
+      {
+        "name": "CSS",
+        "logo": "/logos/css3-original.svg"
+      },
+      {
+        "name": "React",
+        "logo": "/logos/react-original.svg"
+      },
+      {
+        "name": "Next.js",
+        "logo": "/logos/nextjs-original.svg"
+      },
+      {
+        "name": "Node.js",
+        "logo": "/logos/nodejs-original.svg"
+      },
+      {
+        "name": "Express.js",
+        "logo": "/logos/express-original.svg"
+      },
+      {
+        "name": "MongoDB"
+      }
+    ]
+  },
+  {
+    "label": "AI & Computer Vision",
+    "tools": [
+      {
+        "name": "OpenCV"
+      },
+      {
+        "name": "YOLOv8"
+      },
+      {
+        "name": "Machine Learning"
+      },
+      {
+        "name": "Computer Vision"
+      },
+      {
+        "name": "NumPy"
+      }
+    ]
+  },
+  {
+    "label": "Tools & Fundamentals",
+    "tools": [
+      {
+        "name": "Git",
+        "logo": "/logos/git-original.svg"
+      },
+      {
+        "name": "GitHub",
+        "logo": "/logos/github-original.svg"
+      },
+      {
+        "name": "VS Code"
+      },
+      {
+        "name": "DBMS"
+      },
+      {
+        "name": "Operating Systems"
+      },
+      {
+        "name": "Computer Networks"
+      },
+      {
+        "name": "Kotlin"
+      },
+      {
+        "name": "Android"
+      },
+      {
+        "name": "Networking"
+      }
+    ]
+  }
+]

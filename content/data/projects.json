@@ -1,0 +1,94 @@
+[
+  {
+    "images": ["/pfp/kannada-text-detection.jpg"],
+    "slug": "kannada-text-detection",
+    "name": "Kannada Text Detection in Video Frames",
+    "tagline": "Detecting Kannada text in real-world video frames",
+    "year": 2026,
+    "kind": "Research",
+    "meta": "Computer Vision · Research Project",
+    "lede": "A computer-vision pipeline exploring text-region detection in Kannada news-video frames under blur, low resolution, and changing scene conditions.",
+    "highlights": [
+      "Extracts frames from Kannada news videos using OpenCV for dataset preparation.",
+      "Explores text-region proposals and YOLOv8-based detection, with a focus on Kannada script in real-world footage.",
+      "Includes annotation, dataset organization, augmentation, training, and inference workflows.",
+      "The project is being developed to train and evaluate a custom detector rather than rely on a pretrained OCR engine for the core detection task."
+    ],
+    "stack": [
+      "Python",
+      "OpenCV",
+      "YOLOv8",
+      "NumPy",
+      "Computer Vision"
+    ]
+  },
+  {
+  "slug": "skillnest-lms",
+  "name": "SkillNest — Online Learning Platform",
+  "tagline": "A web platform for learning and course management",
+  "year": 2026,
+  "kind": "Product",
+  "meta": "Full-stack Web Development",
+  "lede": "An online learning platform project built around course discovery, learning workflows, and a web-based user experience.",
+  "highlights": [
+    "Built as a full-stack web-development project using a Node.js and Express backend.",
+    "Uses MongoDB for application data.",
+    "Designed to bring learning content and course workflows into one application."
+  ],
+  "stack": [
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "HTML",
+    "CSS"
+  ],
+  "images": [
+    "/pfp/skillnest.png"
+  ]
+},
+  {
+  "slug": "pharmacy-management",
+  "name": "Pharmacy Management System",
+  "tagline": "A software project for pharmacy workflows",
+  "year": 2025,
+  "kind": "System",
+  "meta": "Academic Project",
+  "lede": "A pharmacy-management application project focused on organizing common inventory and medicine-management workflows.",
+  "highlights": [
+    "Created as an academic software project.",
+    "Focused on organizing common medicine and pharmacy-management workflows."
+  ],
+  "stack": [
+    "Python",
+    "SQL",
+    "DBMS"
+  ],
+  "images": [
+    "/pfp/pharmacy.png"
+  ]
+},
+  {
+  "slug": "pulsechat",
+  "name": "PulseChat",
+  "tagline": "Exploring offline-first peer-to-peer messaging",
+  "year": 2026,
+  "kind": "Research",
+  "tag": "Experiment",
+  "meta": "Ongoing concept / prototype",
+  "lede": "An exploration of an offline messaging experience that could communicate across nearby devices without depending on constant internet access.",
+  "highlights": [
+    "Explores mesh-network ideas and offline-first messaging.",
+    "Android direction: Kotlin and Jetpack Compose.",
+    "Cross-platform support is a future consideration, not a completed feature."
+  ],
+  "stack": [
+    "Kotlin",
+    "Android",
+    "Networking"
+  ],
+  "images": [
+    "/pfp/pulsechat.png"
+  ]
+}
+]
