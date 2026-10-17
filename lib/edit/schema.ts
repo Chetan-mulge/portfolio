@@ -1,3 +1,4 @@
+
 /**
  * The vocabulary the editable content is described in.
  *
@@ -18,7 +19,7 @@ interface Base {
 }
 
 export type Field =
-  /*
+  /**
    * `empty`: the key must be there but may be "". For text the code reads as an always-present
    * string, where blank means "hide this" — unlike `optional`, which lets the key go entirely.
    */
@@ -43,27 +44,39 @@ const isObj = (v: unknown): v is Record<string, unknown> =>
   typeof v === 'object' && v !== null && !Array.isArray(v)
 
 /** A path under `public/`, written as the site references it: leading slash, no climbing. */
-const isPublicPath = (v: string) => /^\/\S+$/.test(v) && !v.split('/').includes('..')
+const isPublicPath = (v: string) => /^\/(?!\/)\S+$/.test(v) && !v.split('/').includes('..')
 
-function checkString(field: Field & { max?: number; empty?: boolean }, v: unknown, path: string, out: Issue[]) {
-  if (typeof v !== 'string') return void out.push({ path, message: `${field.label} must be text` })
+function checkString(
+  field: Field & { max?: number; empty?: boolean },
+  v: unknown,
+  path: string,
+  out: Issue[],
+) {
+  if (typeof v !== 'string')
+    return void out.push({ path, message: `${field.label} must be text` })
+
   if (!v.trim()) {
-    if (!field.optional && !field.empty) out.push({ path, message: `${field.label} is required` })
+    if (!field.optional && !field.empty)
+      out.push({ path, message: `${field.label} is required` })
     return
   }
+
   if (field.max !== undefined && v.length > field.max)
     out.push({ path, message: `${field.label} is longer than ${field.max} characters` })
+
   if (
     field.kind === 'url' &&
-    !/^(https?:\/\/|mailto:|\/(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))\S*)/.test(v)
+    !/^(https?:\/\/|mailto:|tel:|\/(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))\S*)/.test(v)
   ) {
-  out.push({
-    path,
-    message: `${field.label} must start with https://, http://, mailto: or a local public path`,
-  })
-}
+    out.push({
+      path,
+      message: `${field.label} must start with https://, http://, mailto:, tel: or a local public path`,
+    })
+  }
+
   if (field.kind === 'email' && !/^[^@\s]+@[^@\s]+$/.test(v))
     out.push({ path, message: `${field.label} does not look like an email address` })
+
   if (field.kind === 'file' && !isPublicPath(v))
     out.push({ path, message: `${field.label} must be a path under public/, like /work/name.webp` })
 }
@@ -79,6 +92,7 @@ function walk(field: Field, v: unknown, path: string, out: Issue[]): void {
     if (!field.optional) out.push({ path, message: `${field.label} is required` })
     return
   }
+
   switch (field.kind) {
     case 'str':
     case 'text':
@@ -88,49 +102,84 @@ function walk(field: Field, v: unknown, path: string, out: Issue[]): void {
     case 'ref':
     case 'file':
       return checkString(field, v, path, out)
+
     case 'num':
       if (typeof v !== 'number' || !Number.isFinite(v))
         return void out.push({ path, message: `${field.label} must be a number` })
+
       if (field.int && !Number.isInteger(v))
         out.push({ path, message: `${field.label} must be a whole number` })
+
       if (field.min !== undefined && v < field.min)
         out.push({ path, message: `${field.label} must be at least ${field.min}` })
+
       if (field.max !== undefined && v > field.max)
         out.push({ path, message: `${field.label} must be at most ${field.max}` })
+
       return
+
     case 'bool':
-      if (typeof v !== 'boolean') out.push({ path, message: `${field.label} must be on or off` })
+      if (typeof v !== 'boolean')
+        out.push({ path, message: `${field.label} must be on or off` })
       return
+
     case 'enum':
       if (typeof v !== 'string' || !field.options.includes(v))
         out.push({ path, message: `${field.label} must be one of: ${field.options.join(', ')}` })
       return
+
     case 'shot': {
-      const file: Field = { kind: 'file', label: field.label, accept: 'image', dir: field.dir }
+      const file: Field = {
+        kind: 'file',
+        label: field.label,
+        accept: 'image',
+        dir: field.dir,
+      }
+
       if (typeof v === 'string') return walk(file, v, path, out)
-      if (!isObj(v)) return void out.push({ path, message: `${field.label} must be a picture` })
+
+      if (!isObj(v))
+        return void out.push({ path, message: `${field.label} must be a picture` })
+
       return walk(
         {
           kind: 'obj',
           label: field.label,
-          fields: { src: file, caption: { kind: 'str', label: 'Caption', optional: true } },
+          fields: {
+            src: file,
+            caption: { kind: 'str', label: 'Caption', optional: true },
+          },
         },
         v,
         path,
         out,
       )
     }
+
     case 'list':
-      if (!Array.isArray(v)) return void out.push({ path, message: `${field.label} must be a list` })
+      if (!Array.isArray(v))
+        return void out.push({ path, message: `${field.label} must be a list` })
+
       if (field.min !== undefined && v.length < field.min)
-        out.push({ path, message: `${field.label} needs at least ${field.min} ${field.min === 1 ? 'entry' : 'entries'}` })
+        out.push({
+          path,
+          message: `${field.label} needs at least ${field.min} ${field.min === 1 ? 'entry' : 'entries'}`,
+        })
+
       v.forEach((item, i) => walk(field.of, item, `${path}[${i}]`, out))
       return
+
     case 'obj':
-      if (!isObj(v)) return void out.push({ path, message: `${field.label} must be a group of fields` })
-      for (const [key, f] of Object.entries(field.fields)) walk(f, v[key], join(path, key), out)
+      if (!isObj(v))
+        return void out.push({ path, message: `${field.label} must be a group of fields` })
+
+      for (const [key, f] of Object.entries(field.fields))
+        walk(f, v[key], join(path, key), out)
+
       for (const key of Object.keys(v))
-        if (!(key in field.fields)) out.push({ path: join(path, key), message: `unknown field "${key}"` })
+        if (!(key in field.fields))
+          out.push({ path: join(path, key), message: `unknown field "${key}"` })
+
       return
   }
 }
@@ -140,18 +189,23 @@ export function blank(field: Field): unknown {
   switch (field.kind) {
     case 'num':
       return field.min ?? 0
+
     case 'bool':
       return false
+
     case 'enum':
       return field.options[0]
+
     case 'list':
       return []
+
     case 'obj':
       return Object.fromEntries(
         Object.entries(field.fields)
           .filter(([, f]) => !f.optional)
           .map(([k, f]) => [k, blank(f)]),
       )
+
     default:
       return ''
   }

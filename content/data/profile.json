@@ -29,7 +29,21 @@
       {
         "label": "Email",
         "href": "mailto:mulge10chetan@gmail.com"
-      }
+      },
+      {
+        "label": "Resume",
+        "href": "/Chetan_Mulge_Resume.pdf"
+      },  
+     {
+  "label": "Call",
+  "href": "tel:+917996591319"
+},
+{
+  "label": "WhatsApp",
+  "href": "https://wa.me/917996591319"
+}
+
+
     ]
   },
   "headlineStats": []
