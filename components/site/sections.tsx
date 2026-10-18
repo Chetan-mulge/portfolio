@@ -372,7 +372,7 @@ export function Credentials() {
                     </a>
                   </li>
                 )
-                })}
+              })}
 </ul>
           </div>
 

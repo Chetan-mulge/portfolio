@@ -67,27 +67,9 @@ export function JobCard({
           ))}
         </ul>
 
-        {/* Research paper and video editing portfolio links */}
-        <div className="highlight-actions">
-          <a
-            href="/CM1_paper.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="highlight-action"
-          >
-            Read Research <span aria-hidden="true">↗</span>
-          </a>
+        
 
-          <a
-            href="https://video-editor-portfolio-mu.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="highlight-action"
-          >
-            View Showreel <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-
+         
         <div className="s-chips">
           {stack.map((t) => (
             <span className="s-chip" key={t}>
